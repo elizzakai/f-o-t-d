@@ -1,3 +1,5 @@
 {
-  "workspace.color" : 2
+	"workspace.color": 2,
+	"workspace.preview_type": "custom",
+	"workspace.preview_url": "http:\/\/localhost:5173\/"
 }
