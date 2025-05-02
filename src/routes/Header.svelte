@@ -3,7 +3,7 @@
 
 <nav class="nav-bar">
 	<a href="/" class="nav nav-fotd space">FOTD</a>
-	<a href="/" class="nav nav-about">About us</a>
+	<a href="/about" class="nav nav-about">About us</a>
 </nav>
 
 <style>

@@ -17,7 +17,7 @@
 
 <style>
 	@reference "tailwindcss";
-	
+
 	.t-describe :global(.live:hover) {
 		color: rgb(159, 42, 178);
 	}

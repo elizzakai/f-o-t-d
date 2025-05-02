@@ -1,8 +1,11 @@
 <script>
+	import SearchBar from './SearchBar.svelte';
 </script>
 
-<container class="parent">
-	<div class="blurb"></div>
+<container class="parent items-center">
+	<div class="blurb flex items-center justify-center">
+		<SearchBar />
+	</div>
 </container>
 
 <style>
@@ -16,10 +19,6 @@
 		border-radius: 31px;
 		background-color: #f5d09b;
 	}
-
-	/* .pad {
-		padding-top:40px;
-	} */
 
 	.parent {
 		display: flex;
