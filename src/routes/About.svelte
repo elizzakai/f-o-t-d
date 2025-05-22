@@ -7,11 +7,11 @@
 		<p class="about">
 			Our main goal is to find good fanfic stories faster, so that people can read as much as they
 			can optimally!
-			<span class="block pb-4"></span>
+			<span class="block pb-6"></span>
 			be able to search for fics like you do on the sites, -- tell the site what type of fic that you’re
 			looking for (tags & all), and have the site find you a good fit of the day! (don’t like your fit?
 			run again the randomizer to find another!
-			<span class="block pb-4"></span>
+			<span class="block pb-6"></span>
 			for the fic of the day (FOTD) -- get a good summary on what the fic is about, writing quality,
 			length of the story, completed/not completed
 		</p>
@@ -92,7 +92,7 @@
 	.about {
 		color: #000;
 		font-family: Inter;
-		font-size: 32px;
+		font-size: 28px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;

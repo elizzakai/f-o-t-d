@@ -12,9 +12,9 @@
 </script>
 
 <div class="flex flex-col items-center">
-	<div class="flex">
+	<div class="flex mt-20">
 		<input
-			class="search-box mb-58 pl-20"
+			class="search-box pl-20"
 			type="search"
 			bind:value={search}
 			placeholder={searchText}
@@ -42,12 +42,12 @@
 			/>
 		</svg>
 	</div>
-	<div class="flex flex-row order-2 items-center">
+	<div class="flex flex-row justify-center mt-2">
 		<label class="" for="we want tags"
 			>tags instead :)<input class="ml-3" type="checkbox" bind:checked /></label
 		>
 	</div>
-	<div class="flex flex-col order-3">
+	<div class="flex flex-col items-center mt-28">
 		<svg xmlns="http://www.w3.org/2000/svg" width="547" height="8" viewBox="0 0 547 8" fill="none">
 			<path
 				d="M2.10608 3.9854C9.0554 3.9854 16.0047 3.9854 22.954 3.9854C34.9042 3.9854 46.6736 2.14258 58.5863 2.14258C96.8303 2.14258 135.074 2.14258 173.318 2.14258C216.537 2.14258 259.454 3.9854 302.562 3.9854C349.666 3.9854 396.463 2.14258 443.592 2.14258C464.19 2.14258 484.59 4.563 505.182 4.90682C518.589 5.13067 531.86 5.82823 545.379 5.82823"

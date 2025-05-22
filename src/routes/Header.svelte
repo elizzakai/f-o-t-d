@@ -26,7 +26,7 @@
 		height: 29px;
 		color: #000;
 		font-family: 'Space Grotesk';
-		font-size: 21px;
+		font-size: 26px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: normal;
@@ -36,9 +36,9 @@
 	.nav-about {
 		color: #000;
 		font-family: 'Space Grotesk';
-		font-size: 20px;
+		font-size: 26px;
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 700;
 		line-height: 28px; /* 140% */
 		width: auto;
 		height: auto;

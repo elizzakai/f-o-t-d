@@ -3,7 +3,7 @@
 </script>
 
 <container class="parent items-center">
-	<div class="blurb flex items-center justify-center">
+	<div class="blurb flex justify-center">
 		<SearchBar />
 	</div>
 </container>

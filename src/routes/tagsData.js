@@ -1,4 +1,4 @@
-const topAO3Tags = [
+export const topAO3Tags = [
 	// Genre/Content Tags
 	'Fluff',
 	'Angst',

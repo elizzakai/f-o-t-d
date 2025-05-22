@@ -3,6 +3,7 @@
 </script>
 
 <Box
+	class="pt-6"
 	title={'Made By.'}
 	description={`<span class="live"> Elizza, </span> Fanfiction addict, <span class="live">goon </span> coder, tea lover. orange cat owner.
 	current fandom obsession: <span class="live">PJO</span>.`}

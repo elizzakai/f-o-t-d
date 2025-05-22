@@ -56,7 +56,7 @@
 		color: #000;
 		/* h2 */
 		font-family: 'Space Grotesk';
-		font-size: 40px;
+		font-size: 34px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
@@ -65,7 +65,7 @@
 	.t-describe {
 		color: #000;
 		font-family: Inter;
-		font-size: 32px;
+		font-size: 30px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;

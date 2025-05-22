@@ -1,4 +1,4 @@
-const topAO3Fandoms = [
+export const topAO3Fandoms = [
 	// Anime/Manga
 	'My Hero Academia',
 	'Attack on Titan',
