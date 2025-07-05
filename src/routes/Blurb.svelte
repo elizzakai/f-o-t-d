@@ -1,10 +1,16 @@
 <script>
 	import SearchBar from './SearchBar.svelte';
+	export let state = 'start';
 </script>
 
 <container class="parent items-center">
 	<div class="blurb flex justify-center">
-		<SearchBar />
+		{#if state == 'start'}
+			<SearchBar/>
+		{:else if state == 'getfic'}
+			<Confirm/>
+		{:else}
+		{/if}
 	</div>
 </container>
 

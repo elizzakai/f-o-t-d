@@ -1,21 +1,21 @@
 <script>
-	import {topAO3Tags} from './tagsData.js'
-	import {topAO3Fandoms} from './fandomData.js';
-	import Typeahead from "svelte-typeahead";
+	import { topAO3Tags } from './tagsData.js';
+	import { topAO3Fandoms } from './fandomData.js';
+	import Typeahead from 'svelte-typeahead';
 	let search = $state('');
 	let fandoms = [];
 	let checked = $state(false);
 	const searchText = $derived(checked ? `what is/are your fav tag(s)?` : `what is your fandom?`);
-	$inspect(search);
-	$inspect(checked);
-	$inspect(topAO3Tags);
-	
-	
+	export let state;
+	let cur_state = state;
+	// $inspect(search);
+	// $inspect(checked);
+	// $inspect(topAO3Tags);
 
 	// const getFandoms = () => {
 	// 	//parse api to grab all fandoms from ao3
 	// };
-	// 
+	//
 	// const getTags = () => {
 	// 	//parse to get all tags
 	// };
@@ -24,7 +24,14 @@
 <div class="flex flex-col items-center">
 	<div class="mt-20 flex">
 		<!-- <input class="search-box pl-20" type="search" bind:value={search} placeholder={searchText} /> -->
-		<Typeahead hideLabel={true} label={""} bind:value={search} placeholder={searchText} data={checked ? topAO3Tags : topAO3Fandoms}  showDropdownOnFocus={true} />
+		<Typeahead
+			hideLabel={true}
+			label={''}
+			bind:value={search}
+			placeholder={searchText}
+			data={checked ? topAO3Tags : topAO3Fandoms}
+			showDropdownOnFocus={true}
+		/>
 
 		<svg
 			class="search-icon mt-7 ml-4"
@@ -53,6 +60,9 @@
 			>tags instead :)<input class="ml-3" type="checkbox" bind:checked /></label
 		>
 	</div>
+	<div class="flex-self-end flex flex-col">
+		<button on:click={() => cur_state = 'getfic'}>next</button>
+	</div>
 	<div class="mt-28 flex flex-col items-center">
 		<svg xmlns="http://www.w3.org/2000/svg" width="547" height="8" viewBox="0 0 547 8" fill="none">
 			<path
@@ -67,40 +77,45 @@
 
 <style>
 	@reference "tailwindcss";
-	
+
 	:global([data-svelte-typeahead]) {
 		border: none !important;
 		border-color: transparent !important;
-		
+
 		box-sizing: border-box;
 		font-family: Inter;
 		font-size: 17px;
-		
+
 		width: 514.247px;
 		height: 85.999px;
 		flex-shrink: 0;
-		
+
 		border-radius: 39px !important;
 		background: #fdfbf6;
-		
+
 		//padding-left: 20px !important;
 	}
-	
+
 	:global([data-svelte-search] input) {
 		border: none !important;
 		border-color: transparent !important;
 		box-sizing: border-box !important;
 		font-family: Inter !important;
 		font-size: 17px;
-		
+
 		width: 514.247px !important;
 		height: 85.999px !important;
 		flex-shrink: 0;
-		
+
 		border-radius: 39px !important;
 		background: #fdfbf6;
-		
+
 		padding-left: 70px !important;
+	}
+
+	button:hover {
+		text-decoration: underline;
+		color: #9f2ab2;
 	}
 
 	.container {
